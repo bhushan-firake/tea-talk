@@ -24,6 +24,10 @@ anyway. The third time you do something similar, you refactor.
 
 Tip: Three strikes and you refactor.
 
+### Associated Pattern
+
+[DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+
 ### Motivation
 
 **Why**
