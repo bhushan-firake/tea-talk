@@ -224,3 +224,33 @@ double calculateOutstanding(double previousAmount) {
 }
 ```
 
+Again, looking at the printOutstanding() method, we can conclude that the same can be used to just print the current order amount if you dont have any previous amount. So, we can rename it and use it at both of these places.
+
+```
+void printOwing(double previousAmount) {
+ printBanner();
+ double outstanding = calculateOutstanding(previousAmount * 1.2);
+ printDetails(outstanding);
+}
+
+void printBanner() {
+ System.out.println("**************************");
+ System.out.println("***** Customer Owes ******");
+ System.out.println("**************************");
+}
+
+void printDetails(double amount) {
+ System.out.println("name:" + _name);
+ System.out.println("amount" + amount);
+}
+
+double calculateOutstanding(double previousAmount) {
+ Enumeration orders = _orders.elements();
+ double outstanding = 0.0;
+ while (orders.hasMoreElements()) {
+  Order order = (Order) orders.nextElement();
+  outstanding += order.getAmount();
+ }
+ return outstanding;
+}
+```
