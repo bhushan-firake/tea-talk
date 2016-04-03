@@ -127,6 +127,7 @@ void printOutstanding(double outstanding)
 ```
 
 **5. See whether any temporary variables from source method are used in the target method. If so, declare them in the target method as temporary variables**
+
 Nothing like this
 
 **6. Replace the code in the source method with a function call to new target method**
