@@ -41,6 +41,7 @@ the clearer algorithm.
 ###Example
 
 **Scenario**
+
 A grocery shop owner has a program to print the owing of his customers. He tells the developer to code a program which checks if the customer has any previous amount to pay. If so, he multiplies it with 1.2 and then adds that amount to current order.
 
 The developer writes the code as below:
